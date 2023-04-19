@@ -23,7 +23,7 @@ body {
 } 
 
 .container {
-	padding: 80px 0px;
+	padding: 20px 0px;
 	margin: 0 auto;
 	max-width: 100%;
   text-align: center;
@@ -91,6 +91,12 @@ h5 a{
   color: Silver;
 }
 
+h6 {
+  padding-top: 40px;
+  color: #0081AF;
+  font-weight: bold;
+}
+
 h5 a:hover{
   color: #2DC7FF;
 }
@@ -98,7 +104,7 @@ h5 a:hover{
 p {
 	font-size: 16px;
   text-align: left;
-  padding-top: 40px;
+  padding-top: 20px;
 }
 
 
@@ -655,9 +661,40 @@ q {
   
 }
 
+/*--- bootstrap overrides*/
 
+.active, .dot:hover {
+  background-color: #2b3035 !important;
+}
 
- 
+.nav {
+  --bs-nav-link-padding-x: 1rem;
+  --bs-nav-link-padding-y: 0.5rem;
+  --bs-nav-link-font-weight: ;
+  --bs-nav-link-color: #BEBBB6;
+  --bs-nav-link-hover-color: #2D2D2D;
+  --bs-nav-link-disabled-color: var(--bs-secondary-color);
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.navbar-nav {
+  --bs-nav-link-padding-x: 0;
+  --bs-nav-link-padding-y: 0.5rem;
+  --bs-nav-link-font-weight: ;
+  --bs-nav-link-color: var(--bs-navbar-color) !important;
+  --bs-nav-link-hover-color: #2DC7FF !important;
+  --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
+  display: flex;
+  flex-direction: column;
+  padding-left: 0px;
+  margin-bottom: 0px;
+  list-style: none;
+}
+
 
 
 
